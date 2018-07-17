@@ -14,11 +14,6 @@
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //Meta-Tags -->
 	
-	<!--clockpicker-->
-	<link rel="stylesheet" type="text/css" href="clockpicker/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="clockpicker/dist/bootstrap-clockpicker.min.css">
-	
-
 	<!-- Custom-Stylesheet-Links -->
 	<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="css/bootstrap.min.css"	type="text/css" media="all">
 	<!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" 		type="text/css" media="all">
@@ -123,17 +118,11 @@
 			<input id="title" type="text" class="searchTerm" placeholder="行程">
 			<input id="place" type="text" class="searchTerm" placeholder="地點">
 			<!--<input id="time" type="text" class="searchTerm" placeholder="時間">-->
-			<div class="input-group clockpicker">
-				<input id="time" type="text" class="searchTerm" style="float:center;width:98%;border: 3px solid #00B4CC;
-				padding: 5px;height: 30px;border-radius: 5px;outline: none;" value="時間">
-			</div>
+			<input id="time" type="text" class="searchTerm" placeholder="時間">
 			<button type="button" class="btn btn-warning" id="submit" onclick="x()" >新增</button>
 		</div>
 		
-		<div class="container">
-			<div class="footer">
-			</div>
-		</div>
+		
 	
 	
 	
@@ -202,10 +191,10 @@
 		var arrayEvent = [];
 		var i;
 		
-		
+
 		if(title.value!="")
 		{
-			if(before_event!="")
+			if(before_event!=null)
 			{
 				new_event=before_event+"+"+title.value+"."+place.value+"."+time.value;
 				localStorage.setItem(select_year.toString()+"-"+select_month.toString()+"-"+select_day.toString(),new_event);
@@ -232,7 +221,7 @@
 		}
 		else
 		{
-			if(before_event!="")
+			if(before_event!=null)
 			{
 				arrayEvent=before_event.split("+");
 				for(i=0;i<arrayEvent.length;i++)
@@ -267,6 +256,8 @@
 				});
 			</script>
 		<!-- //Slider-JavaScript -->
+		
+		
 
 		<!-- Slide-To-Top JavaScript -->
 			<script type="text/javascript">
@@ -298,74 +289,6 @@
 
 	<!-- //Custom-JavaScript-File-Links -->
 	
-	
-	<!--clockpicker-->
-	<script type="text/javascript" src="clockpicker/assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="clockpicker/assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="clockpicker/dist/bootstrap-clockpicker.min.js"></script>
-	<script type="text/javascript">
-	$('.clockpicker').clockpicker()
-		.find('input').change(function(){
-			console.log(this.value);
-		});
-	var input = $('#single-input').clockpicker({
-		placement: 'bottom',
-		align: 'left',
-		autoclose: true,
-		'default': 'now'
-	});
-
-	$('.clockpicker-with-callbacks').clockpicker({
-			donetext: 'Done',
-			init: function() { 
-				console.log("colorpicker initiated");
-			},
-			beforeShow: function() {
-				console.log("before show");
-			},
-			afterShow: function() {
-				console.log("after show");
-			},
-			beforeHide: function() {
-				console.log("before hide");
-			},
-			afterHide: function() {
-				console.log("after hide");
-			},
-			beforeHourSelect: function() {
-				console.log("before hour selected");
-			},
-			afterHourSelect: function() {
-				console.log("after hour selected");
-			},
-			beforeDone: function() {
-				console.log("before done");
-			},
-			afterDone: function() {
-				console.log("after done");
-			}
-		})
-		.find('input').change(function(){
-			console.log(this.value);
-		});
-
-	// Manually toggle to the minutes view
-	$('#check-minutes').click(function(e){
-		// Have to stop propagation here
-		e.stopPropagation();
-		input.clockpicker('show')
-				.clockpicker('toggleView', 'minutes');
-	});
-	if (/mobile/i.test(navigator.userAgent)) {
-		$('input').prop('readOnly', true);
-	}
-	</script>
-	<script type="text/javascript" src="clockpicker/assets/js/highlight.min.js"></script>
-	<script type="text/javascript">
-		hljs.configure({tabReplace: '    '});
-		hljs.initHighlightingOnLoad();
-	</script>
-	<!--clockpicker-->
 	
 </body>
 <!-- //Body -->
