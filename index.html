@@ -108,17 +108,22 @@
 	<!-- Countdown-timer -->
 	<div class="agilecountdown-timerwthree">
 		<div class="countdown-timer-w3laits">
-			<div class="container">
-				<button onclick="startTime()">開始</button>
-				<button onclick="pauseTime()">暫停</button>
-				<button onclick="endTime()">結束</button>
-				
-				<h2>在座時間</h2>
+			<div class="container" id="count">
+				<button type="button" class="btn btn-success" onclick="startTime()">開始</button>
+				<!--<button onclick="startTime()">開始</button>-->
+				<button type="button" class="btn btn-danger" onclick="pauseTime()">暫停</button>
+				<!--<button onclick="pauseTime()">暫停</button>-->
+				<button type="button" class="btn btn-secondary" onclick="endTime()">結束</button>
+				<!--<button onclick="endTime()">結束</button>-->
+				<div class="alert alert-danger" role="alert">
+  					接下來要做的事：
+				</div>
+				<div class="alert alert-warning" role="alert">在座時間 <!--</div>-->
 
 				<section class="examples">
 					<!--<div class="simply-countdown-losange" id="simply-countdown-losange"></div>-->
 					
-					<div>
+					<!--<div>-->
 					
 						<span style="position:relative;width:18%;display:inline-block;">
 							<span class="simply-word">hours</span>
@@ -140,12 +145,12 @@
 					
 				</section>
 
-				<h2>離座時間</h2>
+				<div class="alert alert-info" role="alert">離座時間<!--</div>-->
 				
 				<section class="examples">
 					<!--<div class="simply-countdown-losange" id="simply-countdown-losange"></div>-->
 					
-					<div>
+					<!--<div>-->
 					
 						<span style="position:relative;width:18%;display:inline-block;">
 							<span class="simply-word">hours</span>
@@ -178,9 +183,8 @@
 	<div class="about-w3laits" id="about">
 		<div class="container">
 
-			<h1>ABOUT</h1>
-			<p class="about-p-1-aits">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
-			<p class="about-p-2-aits">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h1>TODO List</h1>
+			<p class="about-p-1-aits">About Something Remind You To Fix Your Sitting and Remind You Something to do in the next time. We must use app and sensors to reach what we want to do</p>
 
 		</div>
 	</div>
@@ -201,7 +205,7 @@
 							<img src="images/detail-1.jpg" alt="W3layouts Agileits">
 						</div>
 						<div class="details-grid-info-w3lsagile">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+							<p>Ready to Upload...</p>
 						</div>
 						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">EXPLORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
@@ -213,7 +217,7 @@
 							<img src="images/detail-2.jpg" alt="W3layouts Agileits">
 						</div>
 						<div class="details-grid-info-w3lsagile">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+							<p></p>
 						</div>
 						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">EXPLORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
@@ -225,7 +229,7 @@
 							<img src="images/detail-3.jpg" alt="W3layouts Agileits">
 						</div>
 						<div class="details-grid-info-w3lsagile">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+							<p></p>
 						</div>
 						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">EXPLORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
@@ -246,7 +250,7 @@
 							</div>
 							<div class="modal-body">
 								<img src="images/detail-1.jpg" alt="W3layouts Agileits">
-								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+								<p></p>
 							</div>
 						</div>
 					</div>
@@ -261,7 +265,7 @@
 							</div>
 							<div class="modal-body">
 								<img src="images/detail-2.jpg" alt="W3layouts Agileits">
-								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+								<p></p>
 							</div>
 						</div>
 					</div>
@@ -276,7 +280,7 @@
 							</div>
 							<div class="modal-body">
 								<img src="images/detail-3.jpg" alt="W3layouts Agileits">
-								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+								<p></p>
 							</div>
 						</div>
 					</div>
@@ -304,7 +308,7 @@
 						<img src="images/project-1.jpg" alt="W3layouts Agileits">
 						<div class="projects-info">
 							<h4>Lorem Ipsum</h4>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</li>
@@ -312,7 +316,7 @@
 						<img src="images/project-2.jpg" alt="W3layouts Agileits">
 						<div class="projects-info">
 							<h4>Dolores</h4>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</li>
@@ -320,7 +324,7 @@
 						<img src="images/project-3.jpg" alt="W3layouts Agileits">
 						<div class="projects-info">
 							<h4>Sitamet</h4>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</li>
@@ -328,7 +332,7 @@
 						<img src="images/project-4.jpg" alt="W3layouts Agileits">
 						<div class="projects-info">
 							<h4>Consectetur</h4>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</li>
@@ -336,7 +340,7 @@
 						<img src="images/project-5.jpg" alt="W3layouts Agileits">
 						<div class="projects-info">
 							<h4>Adipiscing</h4>
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</li>
@@ -362,7 +366,7 @@
 						<div class="activity-img agileits w3layouts"><img src='images/article-1.jpg' alt="W3layouts Agileits"></div>
 						<div class="activity-desc agileits w3layouts">
 							<h5>Lorem Ipsum</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -370,7 +374,7 @@
 						<div class="activity-img agileits w3layouts"><img src='images/article-2.jpg' alt="W3layouts Agileits"></div>
 						<div class="activity-desc agileits w3layouts">
 							<h5>Dolores</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -378,7 +382,7 @@
 						<div class="activity-img agileits w3layouts"><img src='images/article-3.jpg' alt="W3layouts Agileits"></div>
 						<div class="activity-desc agileits w3layouts">
 							<h5>Sitamet</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -386,7 +390,7 @@
 						<div class="activity-img agileits w3layouts"><img src='images/article-4.jpg' alt="W3layouts Agileits"></div>
 						<div class="activity-desc agileits w3layouts">
 							<h5>Consectetur</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -394,7 +398,7 @@
 						<div class="activity-img agileits w3layouts"><img src='images/article-5.jpg' alt="W3layouts Agileits"></div>
 						<div class="activity-desc agileits w3layouts">
 							<h5>Adipiscing</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -409,7 +413,7 @@
 		<div class="clearfix"></div>
 	</div>
 	<!-- //Display -->
-<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+<div class="tlinks"><a href="http://www.cssmoban.com/" ></a></div>
 
 
 	<!-- Portfolio -->
@@ -422,8 +426,7 @@
 						<figure>
 							<img src="images/portfolio-1.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -435,8 +438,7 @@
 						<figure>
 							<img src="images/portfolio-2.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -448,8 +450,7 @@
 						<figure>
 							<img src="images/portfolio-3.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -464,8 +465,7 @@
 						<figure>
 							<img src="images/portfolio-4.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -477,8 +477,7 @@
 						<figure>
 							<img src="images/portfolio-5.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -490,8 +489,7 @@
 						<figure>
 							<img src="images/portfolio-6.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -506,8 +504,7 @@
 						<figure>
 							<img src="images/portfolio-7.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -519,8 +516,7 @@
 						<figure>
 							<img src="images/portfolio-8.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -532,8 +528,7 @@
 						<figure>
 							<img src="images/portfolio-9.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>ESTATE</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
 							</figcaption>
 						</figure>
 					</a>
@@ -547,7 +542,7 @@
 
 
 
-	<!-- Team -->
+	<!-- Team 
 	<div class="team w3layouts agileits" id="team">
 
 		<h3>BEHIND OUR SUCCESS</h3>
@@ -617,8 +612,9 @@
 
 
 
+
 	<!-- Booking -->
-	<div class="w3layoutsbooking" id="booking">
+	<!--<div class="w3layoutsbooking" id="booking">
 		<div class="container">
 
 			<h3>BOOK YOUR PROJECT</h3>
@@ -637,7 +633,7 @@
 			</div>
 
 		</div>
-	</div>
+	</div>-->
 	<!-- //Booking -->
 
 
@@ -645,35 +641,26 @@
 	<!-- Contact -->
 	<div class="contactaits" id="contact">
 
-		<div class="col-md-6 col-sm-6 contact-grid contact-grid-1">
-			<!-- Map -->
-			<div class="map">
-				<div class="map-hover">
-					<iframe src="" allowfullscreen></iframe>
-					<div class="map-hover-1"></div>
-				</div>
-			</div>
-			<!-- //Map -->
-		</div>
+		
 
 		<div class="col-md-6 col-sm-6 contact-grid contact-grid-2">
 			<h3>CONTACT</h3>
 			<div class="contact-info">
-				<img src="images/phone.png" alt="W3layouts Agileits">
-				<h4>GOT QUESTIONS?</h4>
+				<!--<img src="images/phone.png" alt="W3layouts Agileits">-->
+				<!--<h4>GOT QUESTIONS?</h4>
 				<p>Contact our customer support team if you have any further questions/doubts regarding our work.</p>
-				<p>We are here to help you out!</p>
+				<p>We are here to help you out!</p>-->
 
 				<div class="comms">
 					<!-- Email -->
 					<div class="email">
-						<p><i class="fa fa-envelope" aria-hidden="true"></i>Email : <a href="mailto:mail@example.com"> info@example.com</a></p>
+						<p><i class="fa fa-envelope" aria-hidden="true"></i>Email : <a href="mailto:mail@example.com"> xuunnis123@gmail.com</a></p>
 					</div>
 					<!-- //Email -->
 
 					<!-- Phone -->
 					<div class="phone">
-						<p><i class="fa fa-phone" aria-hidden="true"></i>Phone : +1 (734) 123-4567</p>
+						<p><i class="fa fa-phone" aria-hidden="true"></i>Phone :(886)975179121</p>
 					</div>
 					<!-- //Phone -->
 					<div class="clearfix"></div>
@@ -720,9 +707,7 @@
 			<div class="clearfix"></div>
 
 			<!-- Copyright -->
-			<div class="copyright">
-				<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-			</div>
+			
 			<!-- //Copyright -->
 			
 		</div>
