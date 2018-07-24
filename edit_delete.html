@@ -29,6 +29,10 @@
 	<!-- //Font-Awesome-File-Links -->
 
 	<!-- Supportive-JavaScript --> <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	
+	<!-- ClockPicker -->
+	<link rel="stylesheet" type="text/css" href="clockpicker/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="clockpicker/dist/bootstrap-clockpicker.min.css">
 
 </head>
 
@@ -112,7 +116,8 @@
 					<p>日期：<font id="date_input"></font></p>
 					<p>活動：<input type="text" class="searchTerm" id="title_input"></p>
 					<p>地點：<input type="text" class="searchTerm" id="place_input"></p>
-					<p>時間：<input type="text" class="searchTerm" id="time_input"></p>
+					<p>時間：<input type="text" class="clockpicker searchTerm" id="time_input" 
+								readonly="readonly" onclick="toBottom()"></p>
 				</div>
 			</center>
 		</div>
@@ -204,7 +209,7 @@
 				{
 					if((arrayEvent[i].match(initialEvent))!=null)
 					{
-						arrayEvent[i]=title.value+"."+time.value+"."+place.value;
+						arrayEvent[i]=title.value+"."+place.value+"."+time.value;
 					}
 				}
 				for(var i=0;i<arrayEvent.length;i++)
@@ -246,6 +251,11 @@
 				localStorage.setItem(selectDate,newEvent);
 			}
 			document.location.href="calendar.html";
+		}
+		
+		function toBottom()
+		{
+			window.scrollTo(0,document.body.scrollHeight);
 		}
 	</script>
 	
@@ -298,6 +308,29 @@
 			</script>
 		<!-- //Smooth-Scrolling-JavaScript -->
 	<!-- //Custom-JavaScript-File-Links -->
+	
+
+	<!-- ClockPicker -->
+	<script type="text/javascript" src="clockpicker/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="clockpicker/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="clockpicker/dist/bootstrap-clockpicker.min.js"></script>
+	<script type="text/javascript">
+	$('.clockpicker').clockpicker()
+		.find('input').change(function(){
+			console.log(this.value);
+		});
+	var input = $('#single-input').clockpicker({
+		placement: 'bottom',
+		align: 'left',
+		autoclose: true,
+		'default': 'now'
+	});
+	</script>
+	<script type="text/javascript" src="clockpicker/assets/js/highlight.min.js"></script>
+	<script type="text/javascript">
+	hljs.configure({tabReplace: '    '});
+	hljs.initHighlightingOnLoad();
+	</script>
 </body>
 <!-- //Body -->
 
